@@ -27,7 +27,7 @@ Which tag has the following text? - *Automatically remove the container when it 
 - `--rmc`
 - `--rm`
 
-`--rm`
+- __`--rm`__
 
 
 ## Question 2. Understanding docker first run 
@@ -42,7 +42,7 @@ What is version of the package *wheel* ?
 - 23.0.1
 - 58.1.0
 
--0.42.0
+- __0.42.0__
 
 
 # Prepare Postgres
@@ -83,7 +83,7 @@ GROUP BY CAST(lpep_pickup_datetime AS DATE),
          CAST(lpep_dropoff_datetime AS DATE)
 ```
 
-- 15612
+- __15612__
 
 
 ## Question 4. Longest trip for each day
@@ -108,7 +108,7 @@ GROUP BY(
 	trip_distance)
 ORDER BY trip_distance DESC
 ```
-- 2019-09-26     
+- __2019-09-26__
 
 
 ## Question 5. Three biggest pick up Boroughs
@@ -133,7 +133,7 @@ GROUP BY "pickup_loc"
 ORDER BY total_amount DESC;
 ```
 
-- "Bronx" "Manhattan" "Queens" 
+- __"Bronx" "Manhattan" "Queens"__ 
 
 
 ## Question 6. Largest tip
@@ -161,7 +161,7 @@ WHERE zpu."Zone" = 'Astoria'
 ORDER BY "tip_amount" DESC;
 ```
 
-- JFK Airport
+- __JFK Airport__
 
 ## Terraform
 
