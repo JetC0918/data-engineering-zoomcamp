@@ -71,6 +71,8 @@ Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in 
 - 15612
 - 15859
 - 89009
+  
+```sql
 SELECT CAST(lpep_pickup_datetime AS DATE) AS pickup_date,
        CAST(lpep_dropoff_datetime AS DATE) AS dropoff_date,
        COUNT(*) AS trip_count
@@ -79,6 +81,7 @@ WHERE CAST(lpep_pickup_datetime AS DATE)  = '2019-09-18'
 	AND CAST(lpep_dropoff_datetime AS DATE) = '2019-09-18'
 GROUP BY CAST(lpep_pickup_datetime AS DATE),
          CAST(lpep_dropoff_datetime AS DATE)
+```
 
 - 15612
 
