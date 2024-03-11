@@ -98,6 +98,7 @@ Tip: For every trip on a single day, we only care about the trip with the longes
 - 2019-09-26
 - 2019-09-21
 
+```sql
 SELECT 
   CAST(lpep_pickup_datetime AS DATE) AS pickup_date, 
 	trip_distance
@@ -106,7 +107,7 @@ GROUP BY(
   CAST(lpep_pickup_datetime AS DATE) , 
 	trip_distance)
 ORDER BY trip_distance DESC
-
+```
 - 2019-09-26     
 
 
@@ -121,6 +122,7 @@ Which were the 3 pick up Boroughs that had a sum of total_amount superior to 500
 - "Bronx" "Manhattan" "Queens" 
 - "Brooklyn" "Queens" "Staten Island"
 
+``` sql
 SELECT   
 	SUM(total_amount) AS total_amount,
 	(zpu."Borough") AS pickup_loc
@@ -129,6 +131,7 @@ FROM green_taxi_trips t JOIN taxi_data as zpu
 WHERE CAST(lpep_pickup_datetime AS DATE) = '2019-09-18' 
 GROUP BY "pickup_loc"
 ORDER BY total_amount DESC;
+```
 
 - "Bronx" "Manhattan" "Queens" 
 
@@ -145,6 +148,7 @@ Note: it's not a typo, it's `tip` , not `trip`
 - JFK Airport
 - Long Island City/Queens Plaza
 
+``` sql
 SELECT   
 	"tip_amount",
 	(zpu."Zone") AS pickup_loc,
@@ -155,6 +159,7 @@ FROM green_taxi_trips t JOIN taxi_data as zpu
 		ON t."DOLocationID" = zdo."LocationID"
 WHERE zpu."Zone" = 'Astoria'  
 ORDER BY "tip_amount" DESC;
+```
 
 - JFK Airport
 
