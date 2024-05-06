@@ -89,7 +89,7 @@ It is best practice in Big Query to always cluster your data:
 
 ## (Bonus: Not worth points) Question 8:
 No Points: Write a `SELECT count(*)` query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
-
+0. The Bigquery will get the row data from metadata info which is already included when reading the table, so the BigQuery will not re-run the calculation of row numbers again.
  
 ## Submitting the solutions
 

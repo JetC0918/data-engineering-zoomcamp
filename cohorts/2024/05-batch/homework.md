@@ -18,6 +18,8 @@ What's the output?
 > [!NOTE]
 > To install PySpark follow this [guide](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/pyspark.md)
 
+** 3.5.0 **
+
 ### Question 2: 
 
 **FHV October 2019**
@@ -33,7 +35,7 @@ What is the average size of the Parquet (ending with .parquet extension) Files t
 - 25MB
 - 87MB
 
-
+** - 6MB **
 
 ### Question 3: 
 
@@ -47,6 +49,8 @@ Consider only trips that started on the 15th of October.
 - 12,856
 - 452,470
 - 62,610
+
+** - 6MB **
 
 > [!IMPORTANT]
 > Be aware of columns order when defining schema
@@ -62,7 +66,7 @@ What is the length of the longest trip in the dataset in hours?
 - 7.68 Hours
 - 3.32 Hours
 
-
+** - 631,152.50 Hours **
 
 ### Question 5: 
 
@@ -75,7 +79,7 @@ Spark’s User Interface which shows the application's dashboard runs on which l
 - 4040
 - 8080
 
-
+** - 4040 **
 
 ### Question 6: 
 
@@ -91,6 +95,7 @@ Using the zone lookup data and the FHV October 2019 data, what is the name of th
 - Union Sq
 - Crown Heights North
 
+** - Jamaica Bay **
 
 ## Submitting the solutions
 
